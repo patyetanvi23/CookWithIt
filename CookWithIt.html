@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CookWithIt :)</title>
+  <link rel="stylesheet" href="CookWithIt.css">
+</head>
+<body>
+  <header>
+    <!-- Styled brand name -->
+    <h1 class="brand">CookWithIt :)</h1>
+    <p><b>"Discover Recipes From What’s On Hand"</b></p>
+    <nav>
+     
+      <a href="recipes.html" >Recipes</a>
+      <a href="favorites.html">Favorites</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h2>Discover Delicious Recipes</h2>
+    <p class="subtitle">Just type your ingredients and we’ll find recipes for you!</p>
+    <div class="search-box">
+      <input type="text" id="ingredientInput" placeholder="Enter ingredients...">
+      <button onclick="searchRecipes()">Find Recipes</button>
+    </div>
+  </main>
+
+  
+    <footer>
+  <div class="footer-top-links">
+    <a href="press&media.html">Press & Media</a>
+    <a href="privacypolicy.html">Privacy Policy</a>
+    <a href="term&conditions.html">Terms & Conditions</a>
+    <a href="accessibility.html">Accessibility Statement</a>
+  </div>
+  <div class="footer-social">
+    <a href="#"><span>🌐</span></a>
+    <a href="#"><span>🐦</span></a>
+    <a href="#"><span>📷</span></a>
+    <a href="#"><span>▶️</span></a>
+  </div>
+  <div class="footer-copyright">
+    © 2025 CookWithIt – Authentic & Easy Recipes Trusted Since 2025
+  </div>
+  <div class="footer-extras">
+    <p>Information from your device can be used to personalize your experience.</p>
+    <a href="#">Do not sell or share my personal information</a> |
+    <a href="#">Terms of Content Use</a>
+    <div class="footer-note">
+      A PARTNER WEBSITE
+    </div>
+  </div>
+</footer>
+  
+
+  <script>
+    function searchRecipes() {
+      let ingredients = document.getElementById("ingredientInput").value;
+      localStorage.setItem("searchIngredients", ingredients);
+      window.location.href = "recipes.html";
+    }
+  </script>
+</body>
+</html>

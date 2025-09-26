@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Details</title>
+  <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+  <header>
+    <h1>🍲 Recipe Details</h1>
+    <a href="recipes.html">⬅ Back to Recipes</a>
+  </header>
+
+  <main id="recipe-details"></main>
+
+  <script>
+    // Get recipe ID from URL
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id"));
+
+    // Get recipes from localStorage
+    const recipes = JSON.parse(localStorage.getItem("recipes") || "[]");
+    const recipe = recipes.find(r => r.id === id);
+
+    if (recipe) {
+      document.getElementById("recipe-details").innerHTML = `
+        <h2>${recipe.name}</h2>
+        <img src="${recipe.photo_url}" alt="${recipe.name}">
+        <p><strong>Cuisine:</strong> ${recipe.cuisine}</p>
+        <p>${recipe.notes}</p>
+        <h3>Ingredients</h3>
+        <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join("")}</ul>
+        <h3>Instructions</h3>
+        <ol>${recipe.instructions.map(s => `<li>${s}</li>`).join("")}</ol>
+      `;
+    } else {
+      document.getElementById("recipe-details").innerHTML = "<p>Recipe not found!</p>";
+    }
+  </script>
+</body>
+</html>

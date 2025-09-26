@@ -1,0 +1,1700 @@
+[
+  {
+    "id": 1,
+    "name": "Thalipeeth",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sandhya-ramesh/Maharashtrian_Thalipeeth.jpg",
+    "notes": "Prep time: 25 min • Serves 3",
+    "ingredients": [
+      "1 cup multigrain flour",
+      "1 onion (finely chopped)",
+      "Green chilies",
+      "Coriander",
+      "Salt",
+      "Oil for roasting"
+    ],
+    "instructions": [
+      "Mix flour, onion, chilies, coriander, and spices with water into dough.",
+      "Flatten small portions into thick pancakes.",
+      "Roast on tawa with oil till golden.",
+      "Serve hot with curd or butter."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bharli Vangi",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://www.cookingfromheart.com/wp-content/uploads/2017/05/Bharli-Vangi-4.jpg",
+    "notes": "Prep time: 30 min • Serves 4",
+    "ingredients": [
+      "6 baby brinjals",
+      "1/2 cup grated dry coconut",
+      "2 tbsp peanuts",
+      "2 tbsp sesame seeds",
+      "1 onion",
+      "Tamarind pulp",
+      "Jaggery",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Dry roast coconut, peanuts, sesame and grind into masala.",
+      "Slit brinjals and stuff with masala.",
+      "Cook in oil with onion, tamarind, jaggery, and water till brinjals are tender.",
+      "Serve hot with bhakri or chapati."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Pithla Bhakri",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://www.cookingwithmyheart.com/wp-content/uploads/2021/06/Pithla-Bhakri.jpg",
+    "notes": "Prep time: 20 min • Serves 2",
+    "ingredients": [
+      "1 cup gram flour (besan)",
+      "2 green chilies",
+      "1 onion",
+      "Curry leaves",
+      "Mustard seeds",
+      "Turmeric",
+      "Salt",
+      "2 bhakris"
+    ],
+    "instructions": [
+      "Fry onion, chilies, curry leaves, mustard seeds.",
+      "Add besan with water, stir till thick curry forms.",
+      "Cook till smooth.",
+      "Serve with hot bhakri."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sabudana Khichdi",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://www.whiskaffair.com/wp-content/uploads/2019/05/Sabudana-Khichdi-2-3.jpg",
+    "notes": "Prep time: 30 min • Serves 2",
+    "ingredients": [
+      "1 cup sabudana (soaked overnight)",
+      "2 potatoes",
+      "2 green chilies",
+      "1/4 cup roasted peanuts",
+      "Curry leaves",
+      "Salt",
+      "Ghee"
+    ],
+    "instructions": [
+      "Heat ghee, fry potatoes, chilies, curry leaves.",
+      "Add soaked sabudana, peanuts, and salt.",
+      "Stir on low flame till pearls turn transparent.",
+      "Serve hot with curd."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Misal Pav",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://madhurasrecipe.com/wp-content/uploads/2020/10/Puneri-Misal-Marathi-Recipe-feature.jpg",
+    "notes": "Prep time: 35 min • Serves 4",
+    "ingredients": [
+      "1 cup sprouted matki",
+      "1 onion",
+      "1 tomato",
+      "Ginger garlic paste",
+      "Kolhapuri masala",
+      "Salt",
+      "Farsan",
+      "Pav buns"
+    ],
+    "instructions": [
+      "Cook sprouts with masala and onion-tomato gravy.",
+      "Serve misal topped with farsan, onion, coriander.",
+      "Enjoy with pav buns."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Vada Pav",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://blog.swiggy.com/wp-content/uploads/2024/11/Image-1_mumbai-vada-pav-1024x538.png",
+    "notes": "Prep time: 20 min • Serves 2",
+    "ingredients": [
+      "4 pav buns",
+      "2 boiled potatoes",
+      "1 cup besan",
+      "Garlic chutney",
+      "Salt",
+      "Green chilies",
+      "Oil"
+    ],
+    "instructions": [
+      "Prepare spiced mashed potato mixture.",
+      "Dip in besan batter and deep fry as vadas.",
+      "Serve in pav with chutneys and fried chili."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Puran Poli",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2015/02/puran-poli-recipe-1.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "1 cup chana dal",
+      "1 cup jaggery",
+      "2 cups wheat flour",
+      "Cardamom powder",
+      "Ghee"
+    ],
+    "instructions": [
+      "Cook chana dal, mash with jaggery and cardamom.",
+      "Make soft dough with wheat flour.",
+      "Stuff puran filling into dough balls.",
+      "Roll and roast with ghee."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Modak",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://aromaticessence.co/wp-content/uploads/2022/08/ukadiche_modak_featured.jpg",
+    "notes": "Prep time: 45 min • Serves 4",
+    "ingredients": [
+      "1 cup rice flour",
+      "1 cup grated coconut",
+      "1/2 cup jaggery",
+      "Cardamom powder",
+      "Ghee"
+    ],
+    "instructions": [
+      "Prepare stuffing with coconut and jaggery.",
+      "Make dough with rice flour and hot water.",
+      "Shape modaks with stuffing.",
+      "Steam for 12 minutes."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Zunka Bhakar",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://bfoodale.com/uploads/2021/08/Web-1.jpg",
+    "notes": "Prep time: 30 min • Serves 3",
+    "ingredients": [
+      "1 cup besan",
+      "2 onions",
+      "2 green chilies",
+      "Curry leaves",
+      "Turmeric",
+      "Salt",
+      "Bhakri"
+    ],
+    "instructions": [
+      "Heat oil, fry onions, chilies, curry leaves.",
+      "Add besan, turmeric, salt with little water.",
+      "Cook till dry.",
+      "Serve with bhakri."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Kothimbir Vadi",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.cookingfromheart.com/wp-content/uploads/2017/01/Kothimbir-Vadi-3.jpg",
+    "notes": "Prep time: 40 min • Serves 4",
+    "ingredients": [
+      "2 cups coriander leaves",
+      "1 cup besan",
+      "Green chilies",
+      "Sesame seeds",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Mix coriander, besan, chilies, spices with water into thick batter.",
+      "Steam till set.",
+      "Cut pieces and shallow fry till crisp."
+    ]
+  }
+]
+[
+  {
+    "id": 11,
+    "name": "Poha",
+    "cuisine": "Maharashtrian Breakfast",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/07/kanda-poha-2.jpg",
+    "notes": "Prep time: 20 min • Serves 2",
+    "ingredients": [
+      "2 cups poha (flattened rice)",
+      "1 onion",
+      "2 green chilies",
+      "Curry leaves",
+      "Mustard seeds",
+      "Turmeric",
+      "Salt",
+      "Coriander",
+      "Lemon juice"
+    ],
+    "instructions": [
+      "Wash poha and drain.",
+      "Fry onion, chilies, curry leaves, mustard seeds.",
+      "Add turmeric, salt, poha and mix.",
+      "Garnish with coriander and lemon juice."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Sheera",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.cookingwithmyheart.com/wp-content/uploads/2021/05/Rava-Sheera.jpg",
+    "notes": "Prep time: 25 min • Serves 3",
+    "ingredients": [
+      "1 cup rava (semolina)",
+      "1/2 cup ghee",
+      "3/4 cup sugar",
+      "2 cups milk",
+      "Cardamom powder",
+      "Cashews and raisins"
+    ],
+    "instructions": [
+      "Roast rava in ghee till golden.",
+      "Add hot milk slowly, stirring to avoid lumps.",
+      "Add sugar and cardamom.",
+      "Garnish with dry fruits."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Shankarpali",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/10/shankarpali-recipe-3.jpg",
+    "notes": "Prep time: 40 min • Serves 4",
+    "ingredients": [
+      "2 cups maida",
+      "1/2 cup sugar",
+      "1/4 cup ghee",
+      "Oil for frying"
+    ],
+    "instructions": [
+      "Mix sugar, ghee, and flour into dough.",
+      "Roll and cut into diamond shapes.",
+      "Deep fry till crisp and golden."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Chakli",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/09/chakli-recipe.jpg",
+    "notes": "Prep time: 45 min • Serves 6",
+    "ingredients": [
+      "2 cups rice flour",
+      "1/2 cup urad dal flour",
+      "1 tsp sesame seeds",
+      "Ajwain",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Mix flours, sesame, ajwain, salt with water into dough.",
+      "Press into spiral chaklis using chakli maker.",
+      "Deep fry till crisp."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Shrikhand",
+    "cuisine": "Maharashtrian Dessert",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/shrikhand-recipe-2.jpg",
+    "notes": "Prep time: 8 hrs (straining) + 15 min • Serves 4",
+    "ingredients": [
+      "2 cups hung curd",
+      "3/4 cup powdered sugar",
+      "Cardamom powder",
+      "Saffron strands",
+      "Dry fruits"
+    ],
+    "instructions": [
+      "Hang curd overnight to remove water.",
+      "Mix smooth with sugar, saffron, cardamom.",
+      "Chill and serve with puri."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Aamras",
+    "cuisine": "Maharashtrian Dessert",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2020/05/aamras-recipe-1.jpg",
+    "notes": "Prep time: 10 min • Serves 3",
+    "ingredients": [
+      "3 ripe mangoes",
+      "Sugar (optional)",
+      "Cardamom powder",
+      "Ghee"
+    ],
+    "instructions": [
+      "Peel and puree mango pulp.",
+      "Add sugar if needed.",
+      "Sprinkle cardamom and ghee.",
+      "Serve chilled with puri."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Batata Bhaji",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://www.cookingwithmyheart.com/wp-content/uploads/2021/07/Batata-Bhaji.jpg",
+    "notes": "Prep time: 20 min • Serves 3",
+    "ingredients": [
+      "4 boiled potatoes",
+      "2 onions",
+      "Green chilies",
+      "Curry leaves",
+      "Mustard seeds",
+      "Turmeric",
+      "Salt"
+    ],
+    "instructions": [
+      "Heat oil, add mustard, curry leaves, onion, chilies.",
+      "Add boiled potatoes, turmeric, salt.",
+      "Mix well and serve."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Masala Bhat",
+    "cuisine": "Maharashtrian Rice Dish",
+    "photo_url": "https://www.cookingwithmyheart.com/wp-content/uploads/2021/06/Masale-Bhat.jpg",
+    "notes": "Prep time: 30 min • Serves 4",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup vegetables (carrot, beans, peas)",
+      "1 tbsp goda masala",
+      "Turmeric",
+      "Cumin seeds",
+      "Salt"
+    ],
+    "instructions": [
+      "Heat oil, add cumin, turmeric, goda masala.",
+      "Add veggies, rice, water, and salt.",
+      "Cook till rice is fluffy.",
+      "Serve with raita or papad."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Solkadhi",
+    "cuisine": "Maharashtrian Drink",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/poornima/sol_kadhi_recipe_400.jpg",
+    "notes": "Prep time: 20 min • Serves 2",
+    "ingredients": [
+      "1 cup kokum",
+      "1 cup coconut milk",
+      "2 garlic cloves",
+      "Green chilies",
+      "Salt",
+      "Coriander"
+    ],
+    "instructions": [
+      "Soak kokum in water.",
+      "Mix with coconut milk, garlic, chilies, salt.",
+      "Strain and garnish with coriander.",
+      "Serve chilled."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Ukadiche Modak",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/08/ukadiche-modak-recipe-1.jpg",
+    "notes": "Prep time: 45 min • Serves 4",
+    "ingredients": [
+      "1 cup rice flour",
+      "1 cup grated coconut",
+      "1/2 cup jaggery",
+      "Cardamom powder",
+      "Ghee"
+    ],
+    "instructions": [
+      "Make coconut-jaggery stuffing.",
+      "Prepare rice flour dough.",
+      "Shape into modaks with stuffing.",
+      "Steam for 12 minutes."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Patholi",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/08/patholi-recipe-1.jpg",
+    "notes": "Prep time: 40 min • Serves 3",
+    "ingredients": [
+      "1 cup rice flour",
+      "1 cup grated coconut",
+      "1/2 cup jaggery",
+      "Cardamom powder",
+      "Turmeric leaves"
+    ],
+    "instructions": [
+      "Spread rice flour batter on turmeric leaves.",
+      "Add coconut-jaggery stuffing.",
+      "Fold and steam till cooked.",
+      "Serve warm."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Sabudana Vada",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/07/sabudana-vada-recipe-2.jpg",
+    "notes": "Prep time: 30 min • Serves 4",
+    "ingredients": [
+      "1 cup soaked sabudana",
+      "2 boiled potatoes",
+      "Green chilies",
+      "Peanuts",
+      "Coriander",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Mix sabudana, potatoes, peanuts, chilies, coriander.",
+      "Shape into patties.",
+      "Deep fry till crisp.",
+      "Serve with curd."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Aluchi Patal Bhaji",
+    "cuisine": "Maharashtrian",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sapana/alu_chi_patal_bhaji_recipe.jpg",
+    "notes": "Prep time: 30 min • Serves 4",
+    "ingredients": [
+      "Colocasia leaves",
+      "1/2 cup besan",
+      "Tamarind pulp",
+      "Jaggery",
+      "Green chilies",
+      "Salt"
+    ],
+    "instructions": [
+      "Boil colocasia leaves and mash.",
+      "Add besan slurry, tamarind, jaggery, spices.",
+      "Cook till thick and smooth.",
+      "Serve hot with rice."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Patodi Rassa",
+    "cuisine": "Maharashtrian Curry",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2020/07/patodi-rassa.jpg",
+    "notes": "Prep time: 45 min • Serves 4",
+    "ingredients": [
+      "1 cup besan",
+      "1 onion",
+      "Kolhapuri masala",
+      "Garlic",
+      "Tamarind",
+      "Oil",
+      "Salt"
+    ],
+    "instructions": [
+      "Prepare thick besan mixture, steam and cut into pieces.",
+      "Cook spicy onion-garlic gravy with masala.",
+      "Add besan patodi pieces.",
+      "Simmer and serve with bhakri."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Bombil Fry",
+    "cuisine": "Maharashtrian Seafood",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/poornima/bombil_fry.jpg",
+    "notes": "Prep time: 25 min • Serves 2",
+    "ingredients": [
+      "4 Bombay duck fish",
+      "1/2 cup rice flour",
+      "Red chili powder",
+      "Turmeric",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Marinate fish with salt, turmeric, chili.",
+      "Coat in rice flour.",
+      "Shallow fry till crisp.",
+      "Serve hot with lemon."
+    ]
+  }
+]
+[
+  {
+    "id": 26,
+    "name": "Thalipeeth",
+    "cuisine": "Maharashtrian Flatbread",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/thalipeeth-recipe-1.jpg",
+    "notes": "Prep time: 30 min • Serves 3",
+    "ingredients": [
+      "1 cup multigrain flour (thalipeeth bhajani)",
+      "1 onion",
+      "Green chilies",
+      "Coriander",
+      "Cumin seeds",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Mix flour with chopped onion, chilies, coriander, and spices.",
+      "Knead with water into soft dough.",
+      "Flatten by hand and cook on tawa with oil.",
+      "Serve hot with curd or pickle."
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Puran Poli",
+    "cuisine": "Maharashtrian Sweet Flatbread",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2019/10/puran-poli-recipe.jpg",
+    "notes": "Prep time: 1.5 hrs • Serves 6",
+    "ingredients": [
+      "2 cups wheat flour",
+      "1 cup chana dal",
+      "1 cup jaggery",
+      "Cardamom powder",
+      "Nutmeg powder",
+      "Ghee"
+    ],
+    "instructions": [
+      "Cook chana dal, mash with jaggery and cardamom.",
+      "Knead flour dough.",
+      "Stuff with puran mixture and roll into poli.",
+      "Roast with ghee till golden."
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Alu Vadi (Patra)",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/08/alu-vadi-patra-recipe-3.jpg",
+    "notes": "Prep time: 50 min • Serves 4",
+    "ingredients": [
+      "10 colocasia leaves",
+      "1 cup besan",
+      "Tamarind pulp",
+      "Jaggery",
+      "Red chili powder",
+      "Salt"
+    ],
+    "instructions": [
+      "Spread besan mixture on colocasia leaves.",
+      "Roll tightly and steam till cooked.",
+      "Cut slices and shallow fry till crisp.",
+      "Serve hot as snack."
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Kothimbir Vadi",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/kothimbir-vadi-recipe-3.jpg",
+    "notes": "Prep time: 40 min • Serves 4",
+    "ingredients": [
+      "1 bunch coriander leaves",
+      "1 cup besan",
+      "Green chilies",
+      "Ginger",
+      "Sesame seeds",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Make thick batter with coriander, besan, and spices.",
+      "Steam mixture till firm.",
+      "Cut into pieces and shallow fry till crisp.",
+      "Serve with chutney."
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Misal Pav",
+    "cuisine": "Maharashtrian Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/10/misal-pav-recipe-1.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "1 cup sprouted moth beans",
+      "Onion",
+      "Tomato",
+      "Kolhapuri masala",
+      "Garlic",
+      "Coriander",
+      "Pav bread"
+    ],
+    "instructions": [
+      "Cook sprouted beans with spices.",
+      "Prepare spicy gravy with onion, tomato, garlic, masala.",
+      "Pour misal in bowl, top with farsan, onion, coriander.",
+      "Serve with pav."
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Vada Pav",
+    "cuisine": "Maharashtrian Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2019/12/vada-pav-recipe-1.jpg",
+    "notes": "Prep time: 40 min • Serves 4",
+    "ingredients": [
+      "4 boiled potatoes",
+      "Besan",
+      "Green chilies",
+      "Garlic",
+      "Ginger",
+      "Pav bread",
+      "Dry chutney"
+    ],
+    "instructions": [
+      "Prepare spiced potato filling.",
+      "Dip in besan batter and deep fry as vada.",
+      "Place inside pav with chutney.",
+      "Serve hot."
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Sabudana Khichdi",
+    "cuisine": "Maharashtrian Fasting Dish",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/07/sabudana-khichdi-recipe-1.jpg",
+    "notes": "Prep time: 30 min • Serves 2",
+    "ingredients": [
+      "1 cup soaked sabudana",
+      "2 boiled potatoes",
+      "Peanuts",
+      "Green chilies",
+      "Cumin seeds",
+      "Salt",
+      "Coriander"
+    ],
+    "instructions": [
+      "Heat oil, add cumin, chilies, peanuts.",
+      "Add boiled potatoes and sabudana.",
+      "Cook on low till pearls turn transparent.",
+      "Garnish with coriander and lemon."
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Zunka Bhakri",
+    "cuisine": "Maharashtrian Village Dish",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2019/06/zunka-recipe.jpg",
+    "notes": "Prep time: 40 min • Serves 3",
+    "ingredients": [
+      "1 cup besan",
+      "Onion",
+      "Green chilies",
+      "Garlic",
+      "Mustard seeds",
+      "Salt",
+      "Bhakri (jowar or bajra)"
+    ],
+    "instructions": [
+      "Cook onion, garlic, chilies with besan and spices.",
+      "Stir fry till crumbly and dry.",
+      "Serve with bhakri and thecha."
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Thecha",
+    "cuisine": "Maharashtrian Chutney",
+    "photo_url": "https://www.cookingwithmyheart.com/wp-content/uploads/2021/09/Thecha.jpg",
+    "notes": "Prep time: 15 min • Serves 4",
+    "ingredients": [
+      "Green chilies",
+      "Garlic",
+      "Peanuts",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Roast green chilies, garlic, and peanuts.",
+      "Crush coarsely with salt.",
+      "Serve with bhakri or roti."
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Pav Bhaji",
+    "cuisine": "Maharashtrian Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/pav-bhaji-recipe-2.jpg",
+    "notes": "Prep time: 45 min • Serves 4",
+    "ingredients": [
+      "1 cup mixed vegetables",
+      "Potatoes",
+      "Tomato",
+      "Onion",
+      "Pav bhaji masala",
+      "Butter",
+      "Pav bread"
+    ],
+    "instructions": [
+      "Boil vegetables and mash.",
+      "Cook with onion, tomato, masala, and butter.",
+      "Toast pav with butter.",
+      "Serve bhaji with pav, onion, lemon."
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Rassa (Kolhapuri Curry)",
+    "cuisine": "Maharashtrian Spicy Curry",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/poornima/kolhapuri_rassa.jpg",
+    "notes": "Prep time: 50 min • Serves 4",
+    "ingredients": [
+      "Chicken or mutton",
+      "Onion",
+      "Tomato",
+      "Kolhapuri masala",
+      "Coconut",
+      "Garlic",
+      "Oil"
+    ],
+    "instructions": [
+      "Roast coconut, onion, garlic, and grind.",
+      "Cook meat with masala and paste.",
+      "Add water for thin spicy gravy.",
+      "Serve with bhakri."
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Bhendi Fry",
+    "cuisine": "Maharashtrian Vegetable",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2019/12/bhindi-fry-recipe-1.jpg",
+    "notes": "Prep time: 25 min • Serves 2",
+    "ingredients": [
+      "200g ladyfinger",
+      "Onion",
+      "Turmeric",
+      "Red chili powder",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Wash and cut bhendi.",
+      "Fry onion and add bhendi with spices.",
+      "Cook till tender.",
+      "Serve hot with roti."
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Danyachi Amti",
+    "cuisine": "Maharashtrian Curry",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sapana/danyachi_amti.jpg",
+    "notes": "Prep time: 35 min • Serves 4",
+    "ingredients": [
+      "1/2 cup roasted peanut powder",
+      "Tamarind pulp",
+      "Jaggery",
+      "Green chilies",
+      "Salt",
+      "Curry leaves"
+    ],
+    "instructions": [
+      "Mix peanut powder with tamarind, jaggery, and spices.",
+      "Cook till slightly thick.",
+      "Serve with rice or bhakri."
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Tambda Rassa",
+    "cuisine": "Kolhapuri Curry",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/poornima/tambda_rassa.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "Mutton",
+      "Kolhapuri masala",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Oil",
+      "Salt"
+    ],
+    "instructions": [
+      "Cook mutton with masala and onion-tomato base.",
+      "Add water for red spicy gravy.",
+      "Serve hot with bhakri or rice."
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Pandhra Rassa",
+    "cuisine": "Kolhapuri Curry",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/poornima/pandhra_rassa.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "Mutton",
+      "Coconut milk",
+      "Cashew paste",
+      "Onion",
+      "Garlic",
+      "Salt"
+    ],
+    "instructions": [
+      "Cook mutton with onion, garlic.",
+      "Add coconut milk and cashew paste.",
+      "Simmer for creamy white curry.",
+      "Serve with bhakri."
+    ]
+  }
+]
+[
+  {
+    "id": 41,
+    "name": "Pithla Bhakri",
+    "cuisine": "Maharashtrian Village Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/pithla-recipe-1.jpg",
+    "notes": "Prep time: 25 min • Serves 3",
+    "ingredients": [
+      "1 cup besan",
+      "Onion",
+      "Green chilies",
+      "Curry leaves",
+      "Mustard seeds",
+      "Salt",
+      "Bhakri"
+    ],
+    "instructions": [
+      "Heat oil, add mustard seeds, chilies, onion.",
+      "Add besan with water and stir continuously.",
+      "Cook till thick and lump free.",
+      "Serve with jowar or bajra bhakri."
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Solkadhi",
+    "cuisine": "Konkani Maharashtrian Drink",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/solkadhi-recipe-1.jpg",
+    "notes": "Prep time: 20 min • Serves 4",
+    "ingredients": [
+      "1 cup coconut milk",
+      "1/2 cup kokum extract",
+      "Garlic",
+      "Green chilies",
+      "Coriander",
+      "Salt"
+    ],
+    "instructions": [
+      "Soak kokum in warm water, extract juice.",
+      "Mix with coconut milk, garlic-chili paste.",
+      "Season with salt and coriander.",
+      "Serve chilled as digestive drink."
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Matki Usal",
+    "cuisine": "Maharashtrian Curry",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2012/09/matki-usal.jpg",
+    "notes": "Prep time: 40 min • Serves 3",
+    "ingredients": [
+      "1 cup sprouted matki",
+      "Onion",
+      "Tomato",
+      "Ginger-garlic paste",
+      "Goda masala",
+      "Curry leaves",
+      "Salt"
+    ],
+    "instructions": [
+      "Cook sprouts with onion, tomato, masala.",
+      "Add water and simmer till soft.",
+      "Garnish with coriander.",
+      "Serve with chapati or rice."
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Masoor Amti",
+    "cuisine": "Maharashtrian Dal",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/poornima/masoor_amti.jpg",
+    "notes": "Prep time: 30 min • Serves 4",
+    "ingredients": [
+      "1 cup masoor dal",
+      "Onion",
+      "Tomato",
+      "Tamarind",
+      "Jaggery",
+      "Mustard seeds",
+      "Curry leaves"
+    ],
+    "instructions": [
+      "Cook masoor dal till soft.",
+      "Add onion, tomato, tamarind, jaggery.",
+      "Prepare tempering with mustard, curry leaves.",
+      "Mix and serve with rice."
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Bharli Vangi",
+    "cuisine": "Maharashtrian Curry",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2012/11/bharli-vangi.jpg",
+    "notes": "Prep time: 45 min • Serves 4",
+    "ingredients": [
+      "6 small brinjals",
+      "Grated coconut",
+      "Peanuts",
+      "Onion",
+      "Goda masala",
+      "Jaggery",
+      "Tamarind"
+    ],
+    "instructions": [
+      "Prepare stuffing with coconut, peanuts, masala, jaggery, tamarind.",
+      "Stuff brinjals and cook in onion-tomato gravy.",
+      "Simmer till tender.",
+      "Serve with chapati or bhakri."
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Tendli Bhaat",
+    "cuisine": "Maharashtrian Rice",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/tendli-bhat-recipe-2.jpg",
+    "notes": "Prep time: 40 min • Serves 3",
+    "ingredients": [
+      "1 cup rice",
+      "200g tendli (ivy gourd)",
+      "Onion",
+      "Goda masala",
+      "Coconut",
+      "Salt",
+      "Ghee"
+    ],
+    "instructions": [
+      "Fry tendli with onion and masala.",
+      "Add rice and water, cook till done.",
+      "Garnish with coconut and ghee.",
+      "Serve hot with raita."
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Ukadiche Modak",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2016/08/modak-recipe-1.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "1 cup rice flour",
+      "1 cup grated coconut",
+      "1/2 cup jaggery",
+      "Cardamom",
+      "Ghee"
+    ],
+    "instructions": [
+      "Prepare stuffing with coconut, jaggery, cardamom.",
+      "Make dough with rice flour and hot water.",
+      "Shape modaks and fill stuffing.",
+      "Steam for 10–12 mins and serve."
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Sheera",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/06/suji-ka-halwa-recipe.jpg",
+    "notes": "Prep time: 25 min • Serves 4",
+    "ingredients": [
+      "1 cup rava (semolina)",
+      "1/2 cup ghee",
+      "1 cup sugar",
+      "2 cups milk",
+      "Cardamom",
+      "Cashews, raisins"
+    ],
+    "instructions": [
+      "Roast rava in ghee till golden.",
+      "Add hot milk and stir continuously.",
+      "Mix sugar and cardamom.",
+      "Garnish with nuts and serve."
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Shrikhand",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2012/04/shrikhand-recipe-1.jpg",
+    "notes": "Prep time: 15 min + chilling • Serves 4",
+    "ingredients": [
+      "2 cups hung curd",
+      "1/2 cup powdered sugar",
+      "Cardamom",
+      "Saffron",
+      "Pistachios"
+    ],
+    "instructions": [
+      "Whisk hung curd till smooth.",
+      "Add sugar, saffron, cardamom.",
+      "Chill before serving.",
+      "Garnish with pistachios."
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Amrakhand",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2014/05/amrakhand-recipe.jpg",
+    "notes": "Prep time: 20 min • Serves 4",
+    "ingredients": [
+      "2 cups hung curd",
+      "1 cup mango pulp",
+      "1/2 cup sugar",
+      "Cardamom",
+      "Saffron"
+    ],
+    "instructions": [
+      "Mix hung curd with mango pulp and sugar.",
+      "Add saffron and cardamom.",
+      "Chill before serving.",
+      "Serve as dessert."
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Batata Bhaji",
+    "cuisine": "Maharashtrian Sabzi",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/batata-bhaji-recipe-2.jpg",
+    "notes": "Prep time: 25 min • Serves 3",
+    "ingredients": [
+      "3 boiled potatoes",
+      "Onion",
+      "Green chilies",
+      "Mustard seeds",
+      "Turmeric",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Heat oil, add mustard seeds, chilies, onion.",
+      "Add boiled potato cubes, turmeric, and salt.",
+      "Mix well and cook for 5 minutes.",
+      "Serve with puri or chapati."
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Batata Vada",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/batata-vada-recipe.jpg",
+    "notes": "Prep time: 40 min • Serves 4",
+    "ingredients": [
+      "4 boiled potatoes",
+      "Besan",
+      "Green chilies",
+      "Garlic",
+      "Turmeric",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Prepare spiced potato filling.",
+      "Dip in besan batter.",
+      "Deep fry till golden.",
+      "Serve hot with chutney."
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Sabudana Vada",
+    "cuisine": "Maharashtrian Fasting Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/sabudana-vada-recipe.jpg",
+    "notes": "Prep time: 45 min • Serves 4",
+    "ingredients": [
+      "1 cup soaked sabudana",
+      "2 boiled potatoes",
+      "Peanuts",
+      "Green chilies",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Mix sabudana, potatoes, peanuts, and spices.",
+      "Shape into vadas.",
+      "Deep fry till golden and crisp.",
+      "Serve with curd or chutney."
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Ghavan",
+    "cuisine": "Konkani Maharashtrian Pancake",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/ghavan-recipe.jpg",
+    "notes": "Prep time: 20 min • Serves 3",
+    "ingredients": [
+      "1 cup rice flour",
+      "2 cups water",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Mix rice flour with water and salt.",
+      "Pour thin batter on hot tawa.",
+      "Cook like neer dosa.",
+      "Serve with chutney or curry."
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Amboli",
+    "cuisine": "Konkani Maharashtrian Pancake",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/amboli-recipe.jpg",
+    "notes": "Prep time: 8 hrs soaking + 20 min • Serves 3",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup urad dal",
+      "1/4 cup poha",
+      "Salt",
+      "Oil"
+    ],
+    "instructions": [
+      "Soak rice, dal, poha and grind batter.",
+      "Ferment overnight.",
+      "Cook thick dosas on tawa.",
+      "Serve with chutney or amti."
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Patholi",
+    "cuisine": "Konkani Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/patholi-recipe.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "1 cup rice",
+      "Grated coconut",
+      "Jaggery",
+      "Turmeric leaves",
+      "Cardamom"
+    ],
+    "instructions": [
+      "Grind soaked rice into batter.",
+      "Spread batter on turmeric leaves.",
+      "Fill with coconut-jaggery stuffing.",
+      "Steam and serve."
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Aluchi Patal Bhaji",
+    "cuisine": "Maharashtrian Curry",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/aluchi-patal-bhaji.jpg",
+    "notes": "Prep time: 40 min • Serves 3",
+    "ingredients": [
+      "Colocasia leaves",
+      "Peanut powder",
+      "Jaggery",
+      "Tamarind",
+      "Besan",
+      "Salt"
+    ],
+    "instructions": [
+      "Chop colocasia leaves and boil.",
+      "Add peanut powder, jaggery, tamarind, besan.",
+      "Simmer till thick.",
+      "Serve with rice or bhakri."
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Methichi Patal Bhaji",
+    "cuisine": "Maharashtrian Curry",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sapana/methi_patal_bhaji.jpg",
+    "notes": "Prep time: 35 min • Serves 3",
+    "ingredients": [
+      "1 bunch methi leaves",
+      "Peanut powder",
+      "Jaggery",
+      "Tamarind",
+      "Green chilies",
+      "Salt"
+    ],
+    "instructions": [
+      "Cook methi leaves with chilies.",
+      "Add peanut powder, tamarind, jaggery.",
+      "Simmer to gravy consistency.",
+      "Serve hot."
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Masale Bhat",
+    "cuisine": "Maharashtrian Spiced Rice",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/masale-bhat-recipe.jpg",
+    "notes": "Prep time: 40 min • Serves 4",
+    "ingredients": [
+      "1 cup rice",
+      "1 cup mixed vegetables",
+      "Goda masala",
+      "Coconut",
+      "Cashews",
+      "Ghee"
+    ],
+    "instructions": [
+      "Fry vegetables with masala.",
+      "Add rice and water, cook till done.",
+      "Garnish with coconut and cashews.",
+      "Serve with raita or kadhi."
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Tikhat Shev",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/tikhat-shev-recipe.jpg",
+    "notes": "Prep time: 45 min • Serves 6",
+    "ingredients": [
+      "1 cup besan",
+      "Red chili powder",
+      "Salt",
+      "Ajwain",
+      "Oil"
+    ],
+    "instructions": [
+      "Make soft dough with besan, spices, and water.",
+      "Press into sev mould.",
+      "Deep fry till crisp.",
+      "Cool and store."
+    ]
+  }
+][
+  {
+    "id": 61,
+    "name": "Chivda",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/poha-chivda-recipe.jpg",
+    "notes": "Prep time: 30 min • Serves 6",
+    "ingredients": [
+      "2 cups thin poha",
+      "Peanuts",
+      "Roasted chana dal",
+      "Green chilies",
+      "Curry leaves",
+      "Turmeric",
+      "Salt",
+      "Sugar"
+    ],
+    "instructions": [
+      "Dry roast poha till crisp.",
+      "Fry peanuts, chilies, curry leaves separately.",
+      "Mix all with salt, sugar, turmeric.",
+      "Cool and store in airtight jar."
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Kanda Pohe",
+    "cuisine": "Maharashtrian Breakfast",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/kanda-poha-recipe-1.jpg",
+    "notes": "Prep time: 20 min • Serves 3",
+    "ingredients": [
+      "2 cups poha",
+      "1 onion",
+      "Green chilies",
+      "Peanuts",
+      "Curry leaves",
+      "Mustard seeds",
+      "Turmeric",
+      "Salt"
+    ],
+    "instructions": [
+      "Rinse poha and keep aside.",
+      "Heat oil, add mustard seeds, curry leaves, onion, peanuts.",
+      "Add turmeric, salt, poha.",
+      "Mix well and cook 2–3 mins.",
+      "Garnish with coriander and lemon."
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Batata Pohe",
+    "cuisine": "Maharashtrian Breakfast",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/batata-poha-recipe.jpg",
+    "notes": "Prep time: 25 min • Serves 3",
+    "ingredients": [
+      "2 cups poha",
+      "2 boiled potatoes",
+      "Onion",
+      "Green chilies",
+      "Peanuts",
+      "Mustard seeds",
+      "Turmeric"
+    ],
+    "instructions": [
+      "Rinse poha and keep aside.",
+      "Fry onion, chilies, peanuts.",
+      "Add diced potatoes, turmeric, salt.",
+      "Mix in poha and steam 2 mins.",
+      "Serve hot with lemon."
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Dadpe Pohe",
+    "cuisine": "Maharashtrian Snack",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/dadpe-poha-recipe.jpg",
+    "notes": "Prep time: 20 min • Serves 4",
+    "ingredients": [
+      "2 cups thin poha",
+      "Onion",
+      "Green chilies",
+      "Grated coconut",
+      "Coriander",
+      "Lemon juice",
+      "Sugar",
+      "Salt"
+    ],
+    "instructions": [
+      "Mix poha with onion, coconut, coriander.",
+      "Add sugar, salt, lemon juice.",
+      "Prepare tempering with mustard, curry leaves, chilies.",
+      "Pour over poha, mix and serve."
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Misal Pav",
+    "cuisine": "Maharashtrian Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/misal-pav-recipe-1.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "1 cup sprouted matki",
+      "Onion",
+      "Tomato",
+      "Kolhapuri masala",
+      "Farsan",
+      "Pav",
+      "Lemon"
+    ],
+    "instructions": [
+      "Cook sprouts with onion, tomato, masala.",
+      "Prepare spicy tarri gravy.",
+      "Serve in bowl topped with farsan.",
+      "Serve with pav and lemon."
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Kolhapuri Tambda Rassa",
+    "cuisine": "Maharashtrian Non-Veg Curry",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sandhya/Tambda_Rassa.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "500g mutton",
+      "Onion",
+      "Kolhapuri masala",
+      "Coconut",
+      "Garlic",
+      "Red chilies",
+      "Oil"
+    ],
+    "instructions": [
+      "Roast masala paste with onion, coconut.",
+      "Add mutton and pressure cook.",
+      "Simmer in spicy broth.",
+      "Serve with bhakri or rice."
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Kolhapuri Pandhra Rassa",
+    "cuisine": "Maharashtrian Non-Veg Curry",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sandhya/Pandhra_Rassa.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "500g mutton",
+      "Onion",
+      "Coconut milk",
+      "Cashews",
+      "Green chilies",
+      "Ginger-garlic",
+      "Oil"
+    ],
+    "instructions": [
+      "Make white masala with coconut, cashews, green chilies.",
+      "Cook mutton with masala till tender.",
+      "Simmer in coconut milk.",
+      "Serve with rice or bhakri."
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Mutton Sukka",
+    "cuisine": "Maharashtrian Non-Veg Dry",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/mutton-sukka.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "500g mutton",
+      "Onion",
+      "Coconut",
+      "Kolhapuri masala",
+      "Coriander",
+      "Oil"
+    ],
+    "instructions": [
+      "Pressure cook mutton till tender.",
+      "Roast coconut, onion, masala paste.",
+      "Add mutton and cook dry.",
+      "Serve with chapati or bhakri."
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Chicken Kolhapuri",
+    "cuisine": "Maharashtrian Non-Veg Curry",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/chicken-kolhapuri.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "500g chicken",
+      "Onion",
+      "Tomato",
+      "Kolhapuri masala",
+      "Coconut",
+      "Red chilies",
+      "Oil"
+    ],
+    "instructions": [
+      "Roast masala paste with onion and coconut.",
+      "Add chicken and cook with tomato, masala.",
+      "Simmer till gravy thickens.",
+      "Serve with bhakri or rice."
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Tambda Rassa Egg Curry",
+    "cuisine": "Maharashtrian Curry",
+    "photo_url": "https://www.archanaskitchen.com/images/archanaskitchen/egg_rassa.jpg",
+    "notes": "Prep time: 40 min • Serves 3",
+    "ingredients": [
+      "4 boiled eggs",
+      "Onion",
+      "Tomato",
+      "Kolhapuri masala",
+      "Garlic",
+      "Oil"
+    ],
+    "instructions": [
+      "Make spicy rassa with onion, tomato, masala.",
+      "Add boiled eggs and simmer.",
+      "Serve with pav or rice."
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Pav Bhaji",
+    "cuisine": "Mumbai Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/pav-bhaji-recipe.jpg",
+    "notes": "Prep time: 45 min • Serves 4",
+    "ingredients": [
+      "2 cups mixed vegetables",
+      "Potatoes",
+      "Onion",
+      "Tomato",
+      "Pav bhaji masala",
+      "Butter",
+      "Pav"
+    ],
+    "instructions": [
+      "Boil and mash vegetables.",
+      "Cook with onion, tomato, masala.",
+      "Mash on tawa with butter.",
+      "Serve with butter-toasted pav."
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Vada Pav",
+    "cuisine": "Mumbai Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/vada-pav-recipe.jpg",
+    "notes": "Prep time: 40 min • Serves 4",
+    "ingredients": [
+      "4 batata vadas",
+      "Pav",
+      "Garlic chutney",
+      "Green chutney",
+      "Tamarind chutney"
+    ],
+    "instructions": [
+      "Slice pav and spread chutneys.",
+      "Place hot batata vada inside.",
+      "Press and serve with fried chilies."
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Ragda Pattice",
+    "cuisine": "Mumbai Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/ragda-pattice-recipe.jpg",
+    "notes": "Prep time: 1 hr • Serves 4",
+    "ingredients": [
+      "1 cup dried white peas",
+      "4 potato patties",
+      "Onion",
+      "Tomato",
+      "Chutneys",
+      "Sev",
+      "Coriander"
+    ],
+    "instructions": [
+      "Cook ragda (white peas curry).",
+      "Fry potato patties.",
+      "Assemble with ragda, chutneys, sev, onion.",
+      "Serve hot."
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Sev Puri",
+    "cuisine": "Mumbai Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/sev-puri-recipe.jpg",
+    "notes": "Prep time: 30 min • Serves 3",
+    "ingredients": [
+      "12 puris",
+      "Boiled potatoes",
+      "Onion",
+      "Tomato",
+      "Chutneys",
+      "Sev",
+      "Coriander"
+    ],
+    "instructions": [
+      "Place puris on plate, fill with potato, onion, tomato.",
+      "Top with chutneys and sev.",
+      "Garnish with coriander and serve."
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Bhel Puri",
+    "cuisine": "Mumbai Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/bhel-puri-recipe.jpg",
+    "notes": "Prep time: 20 min • Serves 4",
+    "ingredients": [
+      "2 cups puffed rice",
+      "Sev",
+      "Onion",
+      "Tomato",
+      "Potato",
+      "Chutneys",
+      "Coriander"
+    ],
+    "instructions": [
+      "Mix puffed rice with sev, onion, tomato, potato.",
+      "Add chutneys and coriander.",
+      "Toss well and serve immediately."
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Dabeli",
+    "cuisine": "Kutchi/Mumbai Street Food",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/dabeli-recipe.jpg",
+    "notes": "Prep time: 40 min • Serves 4",
+    "ingredients": [
+      "4 pav",
+      "Spiced potato filling",
+      "Dabeli masala",
+      "Pomegranate",
+      "Sev",
+      "Chutneys"
+    ],
+    "instructions": [
+      "Prepare spicy potato filling with dabeli masala.",
+      "Stuff inside pav with chutneys, sev, pomegranate.",
+      "Toast on tawa with butter and serve."
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Jalebi",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/jalebi-recipe.jpg",
+    "notes": "Prep time: 2 hrs + frying • Serves 4",
+    "ingredients": [
+      "1 cup maida",
+      "1 tbsp cornflour",
+      "Curd",
+      "Sugar",
+      "Saffron",
+      "Ghee"
+    ],
+    "instructions": [
+      "Ferment maida batter with curd.",
+      "Pipe spirals into hot ghee.",
+      "Soak in saffron sugar syrup.",
+      "Serve warm."
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Anarsa",
+    "cuisine": "Maharashtrian Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/anarsa-recipe.jpg",
+    "notes": "Prep time: 2 days soaking + 1 hr • Serves 4",
+    "ingredients": [
+      "1 cup soaked rice",
+      "1/2 cup jaggery",
+      "Poppy seeds",
+      "Ghee"
+    ],
+    "instructions": [
+      "Soak rice for 2 days, dry and grind.",
+      "Mix with jaggery to make dough.",
+      "Roll in poppy seeds.",
+      "Shallow fry in ghee till golden."
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Karanji",
+    "cuisine": "Maharashtrian Festive Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/karanji-recipe.jpg",
+    "notes": "Prep time: 1 hr • Serves 6",
+    "ingredients": [
+      "2 cups maida",
+      "Grated coconut",
+      "Powdered sugar",
+      "Poppy seeds",
+      "Cardamom",
+      "Ghee"
+    ],
+    "instructions": [
+      "Make dough with maida and ghee.",
+      "Fill with coconut, sugar, poppy seeds.",
+      "Shape into half-moons.",
+      "Deep fry till crisp."
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Chirote",
+    "cuisine": "Maharashtrian Festive Sweet",
+    "photo_url": "https://www.vegrecipesofindia.com/wp-content/uploads/2013/09/chirote-recipe.jpg",
+    "notes": "Prep time: 1.5 hrs • Serves 6",
+    "ingredients": [
+      "2 cups maida",
+      "1/2 cup ghee",
+      "Powdered sugar",
+      "Cardamom",
+      "Oil"
+    ],
+    "instructions": [
+      "Make dough with maida and ghee.",
+      "Roll thin layers, stack with ghee paste.",
+      "Cut into pieces, deep fry.",
+      "Dust with sugar and serve."
+    ]
+  }
+]

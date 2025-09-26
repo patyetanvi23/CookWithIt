@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Favorite Recipes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body base style */
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      position: relative;
+      background: #fefefe;
+      overflow-x: hidden;
+    }
+
+    /* Subtle faint glowing background behind content */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 80vw;
+      height: 80vw;
+      max-width: 800px;
+      max-height: 800px;
+      background: radial-gradient(circle at center, rgba(217, 119, 6, 0.1), transparent 75%);
+      filter: blur(130px);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Ensure main content (including header) stays above background */
+    header, .favorites, .empty {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #d97706;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    header a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #475569;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    header a:hover {
+      color: #d97706;
+    }
+
+    /* Recipe cards grid */
+    .favorites {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1100px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    /* Card styling */
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      opacity: 0;
+      animation: popIn 0.8s ease forwards;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #d97706;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      font-size: 0.9rem;
+      color: #475569;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .remove-btn {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #ef4444;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .remove-btn:hover {
+      background: #dc2626;
+    }
+
+    /* Empty state */
+    .empty {
+      font-size: 1.2rem;
+      color: #6b7280;
+      margin-top: 50px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍴 My Favorite Recipes</h1>
+    <a href="CookWithIt.html">🔙 Back to Home</a>
+  </header>
+
+  <div id="favorites" class="favorites"></div>
+  <div id="emptyMsg" class="empty" style="display:none;">No favorites yet! Start saving recipes 🍲</div>
+
+  <script>
+    // Your existing favorites logic
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    const favContainer = document.getElementById("favorites");
+    const emptyMsg = document.getElementById("emptyMsg");
+
+    function renderFavorites() {
+      favContainer.innerHTML = "";
+      if (favorites.length === 0) {
+        emptyMsg.style.display = "block";
+        return;
+      }
+      emptyMsg.style.display = "none";
+
+      favorites.forEach((recipe, index) => {
+        let card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+          <img src="${recipe.image}" alt="${recipe.title}">
+          <div class="card-content">
+            <div class="card-title">${recipe.title}</div>
+            <div class="card-desc">${recipe.desc}</div>
+            <button class="remove-btn">Remove</button>
+          </div>
+        `;
+
+        card.querySelector(".remove-btn").addEventListener("click", (e) => {
+          e.stopPropagation();
+          removeFavorite(index, card);
+        });
+
+        favContainer.appendChild(card);
+      });
+    }
+
+    function removeFavorite(index, card) {
+      card.style.animation = "fadeOut 0.5s forwards";
+      setTimeout(() => {
+        favorites.splice(index, 1);
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+        renderFavorites();
+      }, 500);
+    }
+
+    renderFavorites();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🍲 My Recipe Website</title>
+  <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+  <header>
+    <h1>🍴 Welcome to  Recipe Collection🍴</h1>
+  </header>
+
+  <main>
+    <h2>All Recipes</h2>
+    <div id="recipe-list" class="grid"></div>
+  </main>
+
+  <script>
+    // 👉 Recipes array (directly in JS instead of JSON file)
+    const recipes = [
+     
+      {
+        id: 1,
+        name: "Paneer Butter Masala",
+        cuisine: "Indian",
+        photo_url: "https://j6e2i8c9.delivery.rocketcdn.me/wp-content/uploads/2020/12/Paneer-butter-masala-recipe-3.jpg.webp",
+        notes: "Prep time: 20 min • Serves 2",
+        ingredients: [
+          "200g paneer","2 onions","2 tomatoes","2 tbsp butter",
+          "1 tsp ginger-garlic paste","Spices (turmeric, garam masala, chili powder, salt)"
+        ],
+        instructions: [
+          "Heat butter in a pan.","Add onions & fry until golden.",
+          "Add tomatoes & cook until soft.","Add spices & paneer cubes.",
+          "Simmer for 5 minutes and serve hot."
+        ]
+      },
+      {
+        id: 2,
+        name: "Pav Bhaji",
+        cuisine: "Maharashtrian",
+        photo_url: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGF2JTIwYmhhaml8ZW58MHx8MHx8fDA%3D",
+        notes: "Prep time: 30 min • Serves 4",
+        ingredients: [
+          "4 pav breads","2 potatoes","1 cup mixed vegetables",
+          "2 onions","2 tomatoes","2 tbsp butter","Pav bhaji masala"
+        ],
+        instructions: [
+          "Boil potatoes & vegetables, mash them.",
+          "Fry onions & tomatoes with masala.",
+          "Mix vegetables, simmer with butter.",
+          "Toast pav with butter and serve."
+        ]
+      },
+      {
+        id: 3,
+        name: "Fried Rice",
+        cuisine: "Chinese",
+        photo_url: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJpZWQlMjByaWNlfGVufDB8fDB8fHww",
+        notes: "Prep time: 15 min • Serves 2",
+        ingredients: [
+          "2 cups cooked rice","1 carrot (chopped)","1 capsicum (chopped)",
+          "1 onion","Soy sauce, chili sauce, salt, pepper"
+        ],
+        instructions: [
+          "Heat oil in a wok.","Add onions & vegetables, stir fry.",
+          "Add sauces & cooked rice.","Mix well and serve hot."
+        ]
+      },
+      {
+        id: 4,
+        name: "Margherita Pizza",
+        cuisine: "Italian",
+        photo_url: "https://images.unsplash.com/photo-1564936281291-294551497d81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFyZ2hlcml0YSUyMHBpenphfGVufDB8fDB8fHww",
+        notes: "Prep time: 25 min • Serves 2",
+        ingredients: [
+          "1 pizza base","100g mozzarella cheese","2 tomatoes (sliced)",
+          "Fresh basil leaves","Olive oil","Salt, chili flakes"
+        ],
+        instructions: [
+          "Spread tomato sauce on pizza base.",
+          "Add mozzarella and sliced tomatoes.",
+          "Bake in oven for 10-12 minutes.",
+          "Garnish with basil & olive oil."
+        ]
+      },
+      {
+        id: 5,
+        name: "Veg Biryani",
+        cuisine: "Indian",
+        photo_url: "https://images.unsplash.com/photo-1630409346824-4f0e7b080087?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnJTIwYmlyeWFuaXxlbnwwfHwwfHx8MA%3D%3D",
+        notes: "Prep time: 40 min • Serves 4",
+        ingredients: [
+          "2 cups basmati rice","1 cup mixed vegetables","2 onions","2 tomatoes",
+          "2 tbsp curd","Whole spices (bay leaf, cardamom, cinnamon)",
+          "Biryani masala","Ghee"
+        ],
+        instructions: [
+          "Soak and parboil rice.","Fry onions, tomatoes & spices.",
+          "Add vegetables & curd, cook masala.",
+          "Layer rice and masala, cook on dum."
+        ]
+      },
+      {
+        id: 6,
+        name: "Chocolate Cake",
+        cuisine: "Dessert",
+        photo_url: "https://images.unsplash.com/photo-1603194202969-12a5dbd29d34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hvY29sYXRlJTIwY2FrZSUyMGhvbWVtYWRlfGVufDB8fDB8fHww",
+        notes: "Prep time: 45 min • Serves 6",
+        ingredients: [
+          "1 cup flour","1/2 cup cocoa powder","1 cup sugar",
+          "2 eggs","1/2 cup butter","1 tsp baking powder","Milk as required"
+        ],
+        instructions: [
+          "Mix dry ingredients (flour, cocoa, sugar, baking powder).",
+          "Add eggs, butter, milk and whisk to smooth batter.",
+          "Bake at 180°C for 30-35 minutes.",
+          "Cool and serve with chocolate frosting."
+        ]
+      },
+      {
+        id: 7,
+        name: "Jeera Rice",
+        cuisine: "Indian",
+        photo_url: "https://plus.unsplash.com/premium_photo-1701011134313-fd5c91ea051e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        notes: "Prep time: 20 min • Serves 2",
+        ingredients: [
+          "1 cup basmati rice","2 cups water","1 tbsp ghee",
+          "1 tsp cumin seeds (jeera)","Salt to taste","Fresh coriander"
+        ],
+        instructions: [
+          "Wash and soak rice for 15 minutes.",
+          "Heat ghee, add cumin seeds and let them splutter.",
+          "Add rice, salt, and water. Cook until fluffy.",
+          "Garnish with coriander and serve."
+        ]
+      },
+      {
+        id: 8,
+        name: "Lemon Rice",
+        cuisine: "South Indian",
+        photo_url: "https://images.unsplash.com/photo-1633760040841-1f708ce95c56?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        notes: "Prep time: 15 min • Serves 2",
+        ingredients: [
+          "2 cups cooked rice","2 tbsp lemon juice","1 tbsp oil",
+          "1 tsp mustard seeds","1 tsp turmeric powder",
+          "Green chilies, curry leaves","Salt to taste"
+        ],
+        instructions: [
+          "Heat oil, add mustard seeds, curry leaves, and chilies.",
+          "Add turmeric and cooked rice, mix well.",
+          "Switch off flame and add lemon juice.",
+          "Mix gently and serve."
+        ]
+      },
+      {
+        id: 9,
+        name: "Sweet Rice",
+        cuisine: "Indian Dessert",
+        photo_url: "https://plus.unsplash.com/premium_photo-1675814316651-3ce3c6409922?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        notes: "Prep time: 25 min • Serves 3",
+        ingredients: [
+          "1 cup basmati rice","1/2 cup sugar","2 tbsp ghee",
+          "Dry fruits (cashews, raisins, almonds)","Cardamom powder",
+          "2 cups milk"
+        ],
+        instructions: [
+          "Cook rice with milk until soft.",
+          "Add sugar, cardamom, and ghee.",
+          "Fry dry fruits separately and add.",
+          "Mix well and serve warm."
+        ]
+      },
+      {
+        id: 10,
+        name: "Curd Rice",
+        cuisine: "South Indian",
+        photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Curd_Rice.jpg/250px-Curd_Rice.jpg",
+        notes: "Prep time: 15 min • Serves 2",
+        ingredients: [
+          "2 cups cooked rice","1 cup curd (yogurt)","Salt to taste",
+          "1 tsp mustard seeds","1 tsp grated ginger",
+          "Green chilies, curry leaves"
+        ],
+        instructions: [
+          "Mash rice slightly and mix with curd & salt.",
+          "Prepare tempering with mustard seeds, curry leaves, ginger, chilies.",
+          "Pour tempering over rice-curd mixture.",
+          "Mix well and serve chilled."
+        ]
+      },
+      {
+        id: 11,
+        name: "Tomato Rice",
+        cuisine: "South Indian",
+        photo_url: "https://www.savoryexperiments.com/wp-content/uploads/2024/01/Tomato-Rice-11.jpg",
+        notes: "Prep time: 20 min • Serves 2",
+        ingredients: [
+          "1 cup rice","2 tomatoes (chopped)","1 onion","1 tbsp oil",
+          "1 tsp mustard seeds","Spices (turmeric, chili powder, garam masala)",
+          "Salt to taste","Coriander leaves"
+        ],
+        instructions: [
+          "Cook rice separately.",
+          "Heat oil, add mustard seeds, onions, tomatoes, and spices.",
+          "Cook until tomatoes turn soft.",
+          "Mix cooked rice into tomato masala, garnish with coriander."
+        ]
+      },
+       {
+        id: 12,
+        name: "Kande Pohe",
+        cuisine: "Maharashtrian",
+        photo_url: "https://www.theloveofspice.com/wp-content/uploads/2019/01/kanda-poha-recipe.jpg",
+        notes: "Prep time: 15 min • Serves 2",
+        ingredients: [
+          "2 cups poha (flattened rice)","1 onion (chopped)",
+          "2 green chilies","1 tsp mustard seeds","Curry leaves",
+          "Turmeric powder","Salt","Fresh coriander","Lemon juice"
+        ],
+        instructions: [
+          "Wash poha and keep aside.",
+          "Heat oil, add mustard seeds, curry leaves, chilies, onions.",
+          "Add turmeric, salt, then poha.",
+          "Mix gently, garnish with coriander and lemon."
+        ]
+      },
+      {
+        id: 13,
+        name: "Gulab Jamun",
+        cuisine: "Indian Dessert",
+        photo_url: "https://theartisticcook.com/wp-content/uploads/2024/10/Gulab-Jamun-with-Milk-Powder.jpg",
+        notes: "Prep time: 40 min • Serves 4",
+        ingredients: [
+          "1 cup khoya","2 tbsp maida","1/4 tsp baking soda",
+          "Oil for frying","2 cups sugar","2 cups water","Cardamom"
+        ],
+        instructions: [
+          "Make dough with khoya, maida, soda.",
+          "Shape into small balls.",
+          "Deep fry till golden.",
+          "Dip in sugar syrup with cardamom."
+        ]
+      },
+      {
+        id: 14,
+        name: "Vegetable Cutlet",
+        cuisine: "Indian Snack",
+        photo_url: "https://www.cookwithmanali.com/wp-content/uploads/2021/04/Veg-Cutlet-500x375.jpg",
+        notes: "Prep time: 25 min • Serves 3",
+        ingredients: [
+          "2 boiled potatoes","1 cup mixed vegetables","2 bread slices",
+          "Spices (chili, garam masala)","Salt","Oil"
+        ],
+        instructions: [
+          "Mash potatoes & veggies, add spices and bread.",
+          "Shape cutlets and coat with bread crumbs.",
+          "Shallow fry till crispy."
+        ]
+      },
+      {
+        id: 15,
+        name: "Vegetable Sandwich",
+        cuisine: "Indian",
+        photo_url: "https://www.watchwhatueat.com/wp-content/uploads/2017/01/Veggie-Sandwich-Recipe-Featured-500x500.jpg",
+        notes: "Prep time: 10 min • Serves 2",
+        ingredients: [
+          "4 bread slices","Butter","Green chutney",
+          "Tomato, cucumber, onion slices","Salt & pepper"
+        ],
+        instructions: [
+          "Spread butter and chutney on bread.",
+          "Layer vegetables and season with salt & pepper.",
+          "Cover with another slice and serve."
+        ]
+      },
+      {
+        id: 16,
+        name: "Zunka Bhakar",
+        cuisine: "Maharashtrian",
+        photo_url: "https://bfoodale.com/uploads/2021/08/Web-1.jpg",
+        notes: "Prep time: 25 min • Serves 2",
+        ingredients: [
+          "1 cup besan (gram flour)","2 onions","Green chilies","Curry leaves",
+          "Turmeric, salt","Bhakri (jowar/ bajra roti)"
+        ],
+        instructions: [
+          "Heat oil, add onions, chilies, curry leaves.",
+          "Add besan, turmeric, salt and sprinkle water.",
+          "Cook till thick and dry.",
+          "Serve with bhakri."
+        ]
+      },
+      {
+        id: 17,
+        name: "Veg Manchurian",
+        cuisine: "Indo-Chinese",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.RtvRXzELNEUbjvpLH4CTfgHaEK?pid=Api&P=0&h=180",
+        notes: "Prep time: 35 min • Serves 3",
+        ingredients: [
+          "2 cups grated vegetables","2 tbsp maida","2 tbsp cornflour",
+          "Soy sauce","Chili sauce","Garlic, ginger"
+        ],
+        instructions: [
+          "Make vegetable balls and deep fry.",
+          "Prepare sauce with soy, chili, garlic, ginger.",
+          "Add balls into sauce and serve hot."
+        ]
+      },
+      {
+        id: 18,
+        name: "Misal Pav",
+        cuisine: "Maharashtrian",
+        photo_url: "https://madhurasrecipe.com/wp-content/uploads/2020/10/Puneri-Misal-Marathi-Recipe-feature.jpg",
+        notes: "Prep time: 30 min • Serves 4",
+        ingredients: [
+          "1 cup sprouted matki","Onion, tomato, ginger, garlic",
+          "Kolhapuri masala","Pav buns","Farsan","Coriander"
+        ],
+        instructions: [
+          "Cook sprouts with masala and gravy.",
+          "Serve in bowl topped with farsan, onion, coriander.",
+          "Serve hot with pav."
+        ]
+      },
+      {
+        id: 19,
+        name: "Rassa Vada",
+        cuisine: "Maharashtrian",
+        photo_url: "https://i0.wp.com/geteasycooking.com/wp-content/uploads/2022/02/20210918_213748.jpg?w=1290&ssl=1",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "Urad dal (soaked & ground)","Spices","Oil for frying",
+          "Spicy rassa curry (onion, tomato, masala)"
+        ],
+        instructions: [
+          "Prepare vadas from dal batter and deep fry.",
+          "Make spicy rassa gravy.",
+          "Soak vadas in gravy and serve."
+        ]
+      },
+      {
+        id: 20,
+        name: "Vada Pav",
+        cuisine: "Maharashtrian",
+        photo_url: "https://blog.swiggy.com/wp-content/uploads/2024/11/Image-1_mumbai-vada-pav-1024x538.png",
+        notes: "Prep time: 20 min • Serves 2",
+        ingredients: [
+          "4 pav buns","2 boiled potatoes","Besan (gram flour)","Garlic chutney",
+          "Green chilies","Salt & spices","Oil"
+        ],
+        instructions: [
+          "Make spiced potato mixture, shape balls.",
+          "Dip in besan batter, deep fry as vadas.",
+          "Place vada in pav with chutneys.",
+          "Serve with fried green chili."
+        ]
+      },
+      {
+        id: 21,
+        name: "Upma",
+        cuisine: "South Indian",
+        photo_url: "https://rakskitchen.net/wp-content/uploads/2013/02/upma-recipe-feat.jpg",
+        notes: "Prep time: 15 min • Serves 2",
+        ingredients: [
+          "1 cup rava (semolina)","2 cups water","1 onion",
+          "Green chilies","Curry leaves","Mustard seeds","Salt"
+        ],
+        instructions: [
+          "Roast rava lightly and keep aside.",
+          "Heat oil, add mustard seeds, curry leaves, onion, chilies.",
+          "Add water, salt, then rava while stirring.",
+          "Cook till soft and serve."
+        ]
+      },
+       {
+        id: 22,
+        name: "Modak",
+        cuisine: "Maharashtrian Sweet",
+        photo_url: "https://aromaticessence.co/wp-content/uploads/2022/08/ukadiche_modak_featured.jpg",
+        notes: "Prep time: 45 min • Serves 4",
+        ingredients: [
+          "1 cup rice flour","1 cup grated coconut","1/2 cup jaggery",
+          "Cardamom powder","Ghee"
+        ],
+        instructions: [
+          "Prepare stuffing with coconut, jaggery, cardamom.",
+          "Make dough with rice flour and hot water.",
+          "Shape modaks with stuffing inside.",
+          "Steam for 10-12 minutes and serve."
+        ]
+      },
+      {
+        id: 23,
+        name: "Coconut Chutney",
+        cuisine: "South Indian",
+        photo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgEralXG39ucYaVhHZ0LijRW7V3aYBt8HsaQ&s",
+        notes: "Prep time: 10 min • Serves 2",
+        ingredients: [
+          "1 cup grated coconut","2 green chilies","1 tbsp roasted chana dal",
+          "Ginger","Salt","Curry leaves","Mustard seeds"
+        ],
+        instructions: [
+          "Grind coconut, chilies, chana dal, ginger with water.",
+          "Temper with mustard seeds and curry leaves.",
+          "Serve with idli, dosa, or upma."
+        ]
+      },
+      {
+        id: 24,
+        name: "Medu Vada",
+        cuisine: "South Indian",
+        photo_url: "https://madhurasrecipe.com/wp-content/uploads/2021/12/poha_vada_featured.jpg",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "1 cup urad dal (soaked)","Green chilies","Ginger","Curry leaves",
+          "Salt","Oil for frying"
+        ],
+        instructions: [
+          "Grind soaked dal into thick batter.",
+          "Add chilies, ginger, curry leaves, salt.",
+          "Shape into vadas and deep fry till golden.",
+          "Serve with chutney and sambar."
+        ]
+      },
+       {
+        id: 25,
+        name: "Thalipeeth",
+        cuisine: "Maharashtrian",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.WcHvxEViPx07pchLwy97dgHaE7?pid=Api&P=0&h=180",
+        notes: "Prep time: 25 min • Serves 2",
+        ingredients: [
+          "1 cup multigrain flour (jowar, bajra, wheat, rice, besan)",
+          "1 onion (chopped)","Green chilies","Coriander","Salt","Oil"
+        ],
+        instructions: [
+          "Mix flours, onion, chilies, coriander, salt with water to make dough.",
+          "Pat into flat discs on tawa with oil.",
+          "Cook both sides till golden.",
+          "Serve hot with curd or chutney."
+        ]
+      },
+      {
+        id: 26,
+        name: "Paratha",
+        cuisine: "Indian",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.WcHvxEViPx07pchLwy97dgHaE7?pid=Api&P=0&h=180",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "2 cups wheat flour","2 potatoes (boiled)","Green chilies",
+          "Salt","Spices","Oil or ghee"
+        ],
+        instructions: [
+          "Knead wheat dough.","Mash potatoes with spices.",
+          "Stuff into dough balls, roll into parathas.",
+          "Roast on tawa with oil/ghee.",
+          "Serve with pickle or curd."
+        ]
+      },
+      {
+        id: 27,
+        name: "Soyabean Curry",
+        cuisine: "Indian",
+        photo_url: "https://tse4.mm.bing.net/th/id/OIP.iH1f3swgoLkrmJfmEIlmPAHaJ4?pid=Api&P=0&h=180",
+        notes: "Prep time: 30 min • Serves 4",
+        ingredients: [
+          "1 cup soya chunks","2 onions","2 tomatoes","Spices",
+          "Ginger-garlic paste","Oil"
+        ],
+        instructions: [
+          "Soak and boil soya chunks.","Make onion-tomato masala.",
+          "Add spices and chunks, simmer for 10 mins.",
+          "Serve with rice or roti."
+        ]
+      },
+      {
+        id: 28,
+        name: "Ghavne (Neer Dosa)",
+        cuisine: "Maharashtrian / South Indian",
+        photo_url: "https://1.bp.blogspot.com/-n_373gBWPjQ/Xpc_ebGIP6I/AAAAAAAAAHU/yReWojRFg68cmLmPQazuzQ70EHvvncDtQCLcBGAsYHQ/s1600/Ghavne-1_32.jpg",
+        notes: "Prep time: 20 min • Serves 2",
+        ingredients: [
+          "1 cup rice flour","2 cups water","Salt","Oil"
+        ],
+        instructions: [
+          "Mix rice flour, salt, water into thin batter.",
+          "Pour on hot tawa and spread.",
+          "Cook both sides lightly.",
+          "Serve with chutney or curry."
+        ]
+      },
+      {
+        id: 29,
+        name: "Sheera (Rava Halwa)",
+        cuisine: "Indian Dessert",
+        photo_url: "https://tse4.mm.bing.net/th/id/OIP.8tK1_Aw4frXhTq1ZSzh5jgHaEK?pid=Api&P=0&h=180",
+        notes: "Prep time: 20 min • Serves 3",
+        ingredients: [
+          "1 cup rava (semolina)","1/2 cup ghee","3/4 cup sugar",
+          "2 cups milk/water","Dry fruits","Cardamom powder"
+        ],
+        instructions: [
+          "Roast rava in ghee.","Add milk/water and cook.",
+          "Stir in sugar, cardamom, dry fruits.",
+          "Serve warm."
+        ]
+      },
+      {
+        id: 30,
+        name: "Alu Vadi (Patra)",
+        cuisine: "Maharashtrian",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.O-kSLuygD5Up4svWigZNIAHaFj?pid=Api&P=0&h=180",
+        notes: "Prep time: 40 min • Serves 4",
+        ingredients: [
+          "10 colocasia (arbi/alu) leaves","1 cup besan",
+          "Spices (chili, turmeric, tamarind, jaggery)","Oil"
+        ],
+        instructions: [
+          "Spread besan-spice paste on leaves.",
+          "Roll tightly, steam until soft.",
+          "Slice and shallow/deep fry.",
+          "Serve as snack."
+        ]
+      },
+      {
+        id: 31,
+        name: "Kothimbir Vadi",
+        cuisine: "Maharashtrian",
+        photo_url: "https://tse4.mm.bing.net/th/id/OIP.52j8_Gsi6Z5Bsya6eccL-AHaLH?pid=Api&P=0&h=180",
+        notes: "Prep time: 35 min • Serves 3",
+        ingredients: [
+          "1 bunch coriander","1 cup besan","Green chilies",
+          "Salt","Spices","Oil"
+        ],
+        instructions: [
+          "Mix coriander, besan, spices with water.",
+          "Steam batter till firm.",
+          "Cut into pieces and shallow fry.",
+          "Serve hot."
+        ]
+      },
+      {
+        id: 32,
+        name: "Shankarpali",
+        cuisine: "Maharashtrian Sweet",
+        photo_url: "https://www.flavouroffood.com/wp-content/uploads/2022/10/Shankarpali-Recipe-3-640x480.jpg",
+        notes: "Prep time: 45 min • Serves 5",
+        ingredients: [
+          "2 cups maida","1/2 cup sugar","1/4 cup ghee","Milk","Oil"
+        ],
+        instructions: [
+          "Make dough with maida, sugar, ghee, milk.",
+          "Roll, cut into small diamonds.",
+          "Deep fry till golden.",
+          "Cool and store in jar."
+        ]
+      },
+      {
+        id: 33,
+        name: "Bhajji (Pakora)",
+        cuisine: "Indian Snack",
+        photo_url: "https://img.freepik.com/premium-photo/crispy-kanda-bhaji-bhajji-pyaj-pakode-fried-onion-pakora-delicious-street-food-from-india_466689-72976.jpg",
+        notes: "Prep time: 20 min • Serves 3",
+        ingredients: [
+          "1 cup besan","Onion/potato/chili slices","Salt","Spices","Oil"
+        ],
+        instructions: [
+          "Make thick batter with besan, spices, water.",
+          "Dip veggies and deep fry till crisp.",
+          "Serve with chutney/tea."
+        ]
+      },
+      {
+        id: 34,
+        name: "Dosa",
+        cuisine: "South Indian",
+        photo_url: "https://tse3.mm.bing.net/th/id/OIP.imoUsWKdkFrhKY_VxBvIzwHaEK?pid=Api&P=0&h=180",
+        notes: "Prep time: 10 hrs (soaking+fermenting) • Serves 4",
+        ingredients: [
+          "2 cups rice","1 cup urad dal","Salt","Oil"
+        ],
+        instructions: [
+          "Soak rice & dal overnight, grind batter.",
+          "Ferment 6-8 hrs, add salt.",
+          "Spread thin on hot tawa with oil.",
+          "Serve with chutney/sambar."
+        ]
+      },
+      {
+        id: 35,
+        name: "Uttapam",
+        cuisine: "South Indian",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.lr3jMnZf3v_YqfCsdE1aQAHaEK?pid=Api&P=0&h=180",
+        notes: "Prep time: 10 hrs (soaking+fermenting) • Serves 3",
+        ingredients: [
+          "Dosa batter","Onions","Tomatoes","Green chilies","Coriander"
+        ],
+        instructions: [
+          "Pour thick batter on tawa.",
+          "Top with onion, tomato, chili, coriander.",
+          "Cook both sides till golden.",
+          "Serve with chutney/sambar."
+        ]
+      },
+      {
+        id: 36,
+        name: "Idli",
+        cuisine: "South Indian",
+        photo_url: "https://www.healthifyme.com/blog/wp-content/uploads/2018/03/idly2.jpeg",
+        notes: "Prep time: 10 hrs (soaking+fermenting) • Serves 4",
+        ingredients: [
+          "2 cups rice","1 cup urad dal","Salt","Oil"
+        ],
+        instructions: [
+          "Soak rice & dal, grind to smooth batter.",
+          "Ferment overnight, add salt.",
+          "Steam in idli moulds 10-12 mins.",
+          "Serve with chutney/sambar."
+        ]
+      },
+      {
+        id: 37,
+        name: "Puran Poli",
+        cuisine: "Maharashtrian Sweet",
+        photo_url: "https://static.vecteezy.com/system/resources/previews/015/933/773/large_2x/puran-poli-puran-roti-holige-obbattu-or-bobbattlu-is-indian-sweet-flatbread-from-maharashtra-free-photo.jpg",
+        notes: "Prep time: 1 hr • Serves 4",
+        ingredients: [
+          "1 cup chana dal","1 cup jaggery","2 cups wheat flour",
+          "Cardamom powder","Ghee"
+        ],
+        instructions: [
+          "Cook chana dal, mash with jaggery and cardamom.",
+          "Knead wheat dough.",
+          "Stuff dal mixture into dough, roll thin.",
+          "Roast on tawa with ghee."
+        ]
+      },
+      {
+        id: 38,
+        name: "Basundi",
+        cuisine: "Maharashtrian Sweet",
+        photo_url: "https://vanitascorner.com/wp-content/uploads/2018/07/BASUNDI.jpg",
+        notes: "Prep time: 1 hr • Serves 5",
+        ingredients: [
+          "1 litre milk","1/2 cup sugar","Cardamom powder",
+          "Saffron","Dry fruits"
+        ],
+        instructions: [
+          "Boil milk and simmer till thick.",
+          "Add sugar, cardamom, saffron.",
+          "Garnish with dry fruits.",
+          "Serve chilled."
+        ]
+      },
+      {
+        id: 39,
+        name: "Shrikhand",
+        cuisine: "Maharashtrian Sweet",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.6unNMbMdilHaNL3kUsMnVQHaE7?pid=Api&P=0&h=180",
+        notes: "Prep time: 20 min + chilling • Serves 4",
+        ingredients: [
+          "2 cups hung curd","1/2 cup sugar","Cardamom","Saffron","Dry fruits"
+        ],
+        instructions: [
+          "Whisk hung curd till smooth.",
+          "Mix sugar, cardamom, saffron.",
+          "Chill and serve with puri."
+        ]
+      },
+      {
+        id: 40,
+        name: "Pedha",
+        cuisine: "Indian Sweet",
+        photo_url: "https://thumbs.dreamstime.com/b/indian-traditional-sweet-pedha-peda-peday-made-milk-khoya-some-other-ingredient-like-cardamom-seeds-pistachio-nuts-128491908.jpg",
+        notes: "Prep time: 30 min • Serves 4",
+        ingredients: [
+          "2 cups khoya","1 cup sugar","Cardamom powder","Ghee"
+        ],
+        instructions: [
+          "Cook khoya with sugar and ghee.",
+          "Add cardamom, mix well.",
+          "Shape into small pedhas.",
+          "Cool and serve."
+        ]
+      },
+      {
+        id: 41,
+        name: "Bharli Vangi (Stuffed Brinjal)",
+        cuisine: "Maharashtrian",
+        photo_url: "https://www.vegrecipesofindia.com/wp-content/uploads/2022/12/bharli-vangi-stuffed-brinjal-1.jpg",
+        notes: "Prep time: 40 min • Serves 3",
+        ingredients: [
+          "6 small brinjals","2 onions","2 tbsp peanut powder",
+          "Kolhapuri masala","Tamarind pulp","Jaggery"
+        ],
+        instructions: [
+          "Slit brinjals and stuff with masala.",
+          "Cook in pan with tamarind-jaggery gravy.",
+          "Simmer till soft.",
+          "Serve with bhakri."
+        ]
+      },
+      {
+        id: 42,
+        name: "Matki Usal",
+        cuisine: "Maharashtrian",
+        photo_url: "https://tse2.mm.bing.net/th/id/OIP.qIto_aQ7bAcK0Z4SuybakgHaEK?pid=Api&P=0&h=180",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "1 cup sprouted matki","Onion","Tomato","Spices","Coriander"
+        ],
+        instructions: [
+          "Cook onion-tomato masala.",
+          "Add sprouts and spices.",
+          "Simmer till soft.",
+          "Serve with rice or roti."
+        ]
+      },
+      {
+        id: 43,
+        name: "Sol Kadhi",
+        cuisine: "Konkani",
+        photo_url: "https://creativelyyours.creative.travel/wp-content/uploads/2019/05/recipe_3.jpg",
+        notes: "Prep time: 20 min • Serves 3",
+        ingredients: [
+          "1 cup kokum","1 cup coconut milk","Green chilies",
+          "Garlic","Coriander","Salt"
+        ],
+        instructions: [
+          "Soak kokum in warm water.",
+          "Blend coconut milk with garlic & chilies.",
+          "Mix with kokum extract and coriander.",
+          "Serve chilled."
+        ]
+      },
+      {
+        id: 44,
+        name: "Chakli",
+        cuisine: "Maharashtrian Snack",
+        photo_url: "https://www.vegrecipesofindia.com/wp-content/uploads/2014/10/chakli-3-736x981.jpg",
+        notes: "Prep time: 1 hr • Serves 5",
+        ingredients: [
+          "2 cups rice flour","1/2 cup besan","Butter","Spices","Oil"
+        ],
+        instructions: [
+          "Make dough with flours, spices, butter.",
+          "Use chakli maker to shape spirals.",
+          "Deep fry till crisp.",
+          "Cool and store."
+        ]
+      },
+      {
+        id: 45,
+        name: "Bhakarwadi",
+        cuisine: "Maharashtrian Snack",
+        photo_url: "https://www.vegrecipesofindia.com/wp-content/uploads/2018/09/bhakarwadi-recipe-2.jpg",
+        notes: "Prep time: 1 hr • Serves 5",
+        ingredients: [
+          "2 cups maida","Stuffing (coconut, sesame, poppy seeds, spices)",
+          "Oil"
+        ],
+        instructions: [
+          "Roll dough, spread stuffing, roll tightly.",
+          "Cut into small spirals.",
+          "Deep fry till golden.",
+          "Cool and store."
+        ]
+      },
+      {
+        id: 46,
+        name: "Kolhapuri Mutton",
+        cuisine: "Maharashtrian Non-Veg",
+        photo_url: "https://madhurasrecipe.com/wp-content/uploads/2020/10/Kolhapuri-Mutton-Rassa-Marathi-Recipe.jpg",
+        notes: "Prep time: 1 hr • Serves 4",
+        ingredients: [
+          "500g mutton","Onions","Tomatoes","Kolhapuri masala","Oil"
+        ],
+        instructions: [
+          "Cook mutton with spices till tender.",
+          "Make spicy onion-tomato masala.",
+          "Mix with mutton, simmer.",
+          "Serve with bhakri/rice."
+        ]
+      },
+      {
+        id: 47,
+        name: "Malvani Fish Curry",
+        cuisine: "Konkan",
+        photo_url: "https://tse4.mm.bing.net/th/id/OIP.UalV9Uggjh62fooaumdrqgAAAA?pid=Api&P=0&h=180",
+        notes: "Prep time: 40 min • Serves 4",
+        ingredients: [
+          "500g fish","Coconut","Kokum","Malvani masala","Onion","Garlic"
+        ],
+        instructions: [
+          "Make coconut-onion-garlic masala paste.",
+          "Cook with kokum, malvani masala, water.",
+          "Add fish pieces and simmer gently.",
+          "Serve with rice."
+        ]
+      },
+       {
+        id: 48,
+        name: "Kokam Juice",
+        cuisine: "Maharashtrian Beverage",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.upRwgVPhOccTr4ipMv1LIQHaEQ?pid=Api&P=0&h=180",
+        notes: "Prep time: 10 min • Serves 2",
+        ingredients: [
+          "1/4 cup kokam (dried)","2 tbsp sugar/jaggery","1 tsp roasted cumin powder",
+          "Black salt","Cold water","Ice cubes"
+        ],
+        instructions: [
+          "Soak kokam in warm water for 30 minutes.",
+          "Extract pulp and strain.",
+          "Mix with sugar, salt, cumin, and water.",
+          "Serve chilled with ice."
+        ]
+      },
+      {
+        id: 49,
+        name: "Cucumber Salad",
+        cuisine: "Healthy",
+        photo_url: "https://www.themediterraneandish.com/wp-content/uploads/2020/08/cucumber-salad-recipe-5.jpg",
+        notes: "Prep time: 5 min • Serves 2",
+        ingredients: [
+          "2 cucumbers","1 onion","1 tomato","Lemon juice","Salt & pepper",
+          "Fresh coriander"
+        ],
+        instructions: [
+          "Slice cucumber, onion, tomato.",
+          "Add lemon juice, salt, and pepper.",
+          "Mix gently and garnish with coriander.",
+          "Serve fresh."
+        ]
+      },
+      {
+        id: 50,
+        name: "Mirchi Pakoda",
+        cuisine: "Indian Snack",
+        photo_url: "https://tse2.mm.bing.net/th/id/OIP.5f-BkVUkiRSHPYPR1VXcQwHaE-?pid=Api&P=0&h=180",
+        notes: "Prep time: 20 min • Serves 3",
+        ingredients: [
+          "8 big green chilies","1 cup besan (gram flour)","1 tsp ajwain",
+          "Red chili powder, salt","Oil for frying"
+        ],
+        instructions: [
+          "Slit green chilies and remove seeds.",
+          "Make thick batter with besan, spices, and water.",
+          "Dip chilies and deep fry till golden.",
+          "Serve hot with chutney."
+        ]
+      },
+      {
+        id: 51,
+        name: "Bhendi Fry (Okra)",
+        cuisine: "Indian",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.pMKyyqCPvzOZyhtHErggpAHaHE?pid=Api&P=0&h=180",
+        notes: "Prep time: 20 min • Serves 2",
+        ingredients: [
+          "250g bhendi (okra)","2 onions","1 tsp turmeric","1 tsp chili powder",
+          "Salt","2 tbsp oil"
+        ],
+        instructions: [
+          "Wash and dry bhendi, cut into pieces.",
+          "Heat oil, fry onions till golden.",
+          "Add bhendi, spices, and cook till tender.",
+          "Serve with roti or rice."
+        ]
+      },
+      {
+        id: 52,
+        name: "Patoli (Sweet Steamed Pancakes)",
+        cuisine: "Konkan",
+        photo_url: "http://www.yourhungerstop.com/wp-content/uploads/2019/10/Patoli-1-1024x678.jpg",
+        notes: "Prep time: 35 min • Serves 4",
+        ingredients: [
+          "1 cup rice flour","1 cup grated coconut","1/2 cup jaggery",
+          "Cardamom powder","Turmeric leaves for steaming"
+        ],
+        instructions: [
+          "Prepare stuffing with coconut, jaggery, cardamom.",
+          "Spread rice flour paste on turmeric leaves.",
+          "Add stuffing, fold, and steam for 10 minutes.",
+          "Serve warm."
+        ]
+      },
+      {
+        id: 53,
+        name: "Mushroom Masala",
+        cuisine: "Indian",
+        photo_url: "https://www.madhuseverydayindian.com/wp-content/uploads/2020/09/mushroom-curry-mushroom-masala-1024x1024.jpg",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "200g mushrooms","2 onions","2 tomatoes","1 tsp ginger-garlic paste",
+          "Spices (turmeric, garam masala, chili)","Oil"
+        ],
+        instructions: [
+          "Fry onions and ginger-garlic till golden.",
+          "Add tomatoes and cook till soft.",
+          "Add spices and chopped mushrooms.",
+          "Cook till mushrooms are tender and gravy thickens."
+        ]
+      },
+      {
+        id: 54,
+        name: "Shevga Bhaji (Drumstick Curry)",
+        cuisine: "Maharashtrian",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.auPql_g4MTRmDNNz9oHbgQHaEK?pid=Api&P=0&h=180",
+        notes: "Prep time: 25 min • Serves 3",
+        ingredients: [
+          "6 drumsticks (cut into pieces)","2 onions","2 tomatoes",
+          "Spices: turmeric, chili, garam masala","Oil"
+        ],
+        instructions: [
+          "Boil drumsticks lightly.",
+          "Heat oil, fry onions and tomatoes.",
+          "Add spices and drumsticks, cook for 10 minutes.",
+          "Serve with rice or roti."
+        ]
+      },
+      {
+        id: 55,
+        name: "Kulith Pithi (Horse Gram Curry)",
+        cuisine: "Maharashtrian",
+        photo_url: "https://tse3.mm.bing.net/th/id/OIP.lEXqqlRB8BjWAA_RBdw6FQHaFj?pid=Api&P=0&h=180",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "1 cup horse gram (kulith)","2 onions","1 tomato","Garlic paste",
+          "Spices: chili, turmeric, goda masala"
+        ],
+        instructions: [
+          "Soak and pressure cook kulith.",
+          "Heat oil, fry onion, garlic, and tomato.",
+          "Add cooked kulith and spices, simmer for 10 minutes.",
+          "Serve with rice or bhakri."
+        ]
+      },
+      {
+        id: 56,
+        name: "Rice Kheer",
+        cuisine: "Indian Dessert",
+        photo_url: "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/kheer-recipe.jpg",
+        notes: "Prep time: 40 min • Serves 4",
+        ingredients: [
+          "1/2 cup rice","4 cups milk","1/2 cup sugar","Cardamom powder",
+          "Dry fruits (cashew, almond, raisin)","Ghee"
+        ],
+        instructions: [
+          "Cook rice in milk till soft.",
+          "Add sugar, cardamom, and ghee.",
+          "Fry dry fruits in ghee and add to kheer.",
+          "Serve warm or chilled."
+        ]
+      },
+      {
+        id: 57,
+        name: "Cheesy Veggie Pizza",
+        cuisine: "Italian",
+        photo_url: "https://www.vegrecipesofindia.com/wp-content/uploads/2020/11/pizza-recipe.jpg",
+        notes: "Prep time: 25 min • Serves 2",
+        ingredients: [
+          "1 pizza base","1/2 cup pizza sauce","1 cup mozzarella cheese",
+          "Veg toppings (capsicum, onion, tomato, corn, mushroom)","Oregano, chili flakes"
+        ],
+        instructions: [
+          "Spread sauce on pizza base.",
+          "Add veggies and cheese.",
+          "Bake for 12 minutes at 200°C.",
+          "Sprinkle oregano and chili flakes before serving."
+        ]
+      },
+      {
+        id: 58,
+        name: "Turmeric Milk (Haldi Doodh)",
+        cuisine: "Indian Beverage",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.Nbvf4FRcL5KQxLx8F7_YvwHaFA?pid=Api&P=0&h=180",
+        notes: "Prep time: 10 min • Serves 1",
+        ingredients: [
+          "1 cup milk","1/2 tsp turmeric powder","1 tsp honey or jaggery",
+          "Pinch of black pepper"
+        ],
+        instructions: [
+          "Boil milk in a saucepan.",
+          "Add turmeric and pepper, simmer 2 minutes.",
+          "Sweeten with honey or jaggery.",
+          "Serve warm."
+        ]
+      },
+       {
+        id: 59,
+        name: "Veg Pulav",
+        cuisine: "Indian Rice Dish",
+        photo_url: "https://tse4.mm.bing.net/th/id/OIP.m-vqTGik6AZAADa1C_DQ1QHaLF?pid=Api&P=0&h=180",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "1 cup basmati rice","1 carrot","1 potato","1/2 cup peas",
+          "Whole spices","Salt","Oil"
+        ],
+        instructions: [
+          "Wash and soak rice for 20 minutes.",
+          "Fry whole spices and chopped veggies in oil.",
+          "Add rice, water, and salt.",
+          "Cook till rice is fluffy. Serve hot."
+        ]
+      },
+      {
+        id: 60,
+        name: "Aloo Paratha",
+        cuisine: "Punjabi",
+        photo_url: "https://tse2.mm.bing.net/th/id/OIP.kBsA5DmOoLvyVM83XkvyxgHaHa?pid=Api&P=0&h=180",
+        notes: "Prep time: 30 min • Serves 2",
+        ingredients: [
+          "2 cups wheat flour","3 boiled potatoes","Green chili","Coriander",
+          "Salt","Ghee"
+        ],
+        instructions: [
+          "Mash potatoes with chili, coriander, salt.",
+          "Roll dough, fill stuffing, flatten.",
+          "Cook on tawa with ghee till golden.",
+          "Serve hot with curd or pickle."
+        ]
+      },
+      {
+        id: 61,
+        name: "Mango Lassi",
+        cuisine: "Indian Beverage",
+        photo_url: "https://tse3.mm.bing.net/th/id/OIP.bkYlGoIrV8kVOGdaLs9sqQHaLE?pid=Api&P=0&h=180",
+        notes: "Prep time: 10 min • Serves 2",
+        ingredients: [
+          "1 cup mango pulp","1 cup curd","2 tbsp sugar","Ice cubes"
+        ],
+        instructions: [
+          "Blend mango pulp, curd, sugar, and ice.",
+          "Pour into glasses. Serve chilled."
+        ]
+      },
+      {
+        id: 62,
+        name: "Capsicum Masala",
+        cuisine: "Indian Curry",
+        photo_url: "https://tse4.mm.bing.net/th/id/OIP.yt_JH30GrXhNF0X6F2AJVQHaEK?pid=Api&P=0&h=180",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "2 capsicum","2 onions","2 tomatoes","Ginger-garlic paste",
+          "Spices","Oil"
+        ],
+        instructions: [
+          "Saute onions and capsicum in oil.",
+          "Add ginger-garlic paste and tomatoes.",
+          "Cook with spices till thick gravy.",
+          "Serve with chapati or rice."
+        ]
+      },
+      {
+        id: 63,
+        name: "Gavar Bhaji (Cluster Beans)",
+        cuisine: "Maharashtrian",
+        photo_url: "https://images.saymedia-content.com/.image/t_share/MTg3ODM4MDMzNTMyMjk4Mjk0/gawar-phali-ki-bhaji-cluster-beans-curry-recipe.jpg",
+        notes: "Prep time: 25 min • Serves 2",
+        ingredients: [
+          "250g gavar","2 onions","1 tomato","Turmeric","Chili powder",
+          "Salt","Oil"
+        ],
+        instructions: [
+          "Wash and chop gavar.",
+          "Cook onions and tomato with spices.",
+          "Add gavar and little water. Cook till soft.",
+          "Serve with roti."
+        ]
+      },
+      {
+        id: 64,
+        name: "Kaju Katli",
+        cuisine: "Indian Sweet",
+        photo_url: "http://www.parsidairyfarm.com/cdn/shop/files/KajuKatli.jpg?v=1699528323",
+        notes: "Prep time: 25 min • Serves 10 pieces",
+        ingredients: [
+          "1 cup cashews","1/2 cup sugar","1/4 cup water",
+          "1 tsp ghee"
+        ],
+        instructions: [
+          "Grind cashews into powder.",
+          "Boil sugar syrup till 1-string consistency.",
+          "Add cashew powder, mix and knead.",
+          "Roll flat, cut into diamond shapes."
+        ]
+      },
+      {
+        id: 64,
+        name: "Palak Paneer",
+        cuisine: "Indian",
+        photo_url: "https://recipes.timesofindia.com/thumb/53093667.cms?imgsize=325892&width=800&height=800",
+        notes: "Prep time: 35 min • Serves 3",
+        ingredients: [
+          "200g paneer","2 cups spinach","1 onion","2 tomatoes",
+          "Garlic","Spices"
+        ],
+        instructions: [
+          "Blanch spinach, make puree.",
+          "Cook onion-tomato masala with garlic & spices.",
+          "Add spinach puree and paneer.",
+          "Simmer 5 minutes and serve."
+        ]
+      },
+      {
+        id: 65,
+        name: "Palak Bhaji",
+        cuisine: "Maharashtrian",
+        photo_url: "https://tse4.mm.bing.net/th/id/OIP.HEEFnWyoV7Ie3aWD2N10QQHaE7?pid=Api&P=0&h=180",
+        notes: "Prep time: 20 min • Serves 2",
+        ingredients: [
+          "2 cups chopped spinach","1 onion","2 garlic cloves",
+          "Green chili","Salt","Oil"
+        ],
+        instructions: [
+          "Heat oil, fry onion, garlic, chili.",
+          "Add spinach and salt.",
+          "Cook till water dries.",
+          "Serve with bhakri or chapati."
+        ]
+      },
+      {
+        id: 66,
+        name: "Bhel Puri",
+        cuisine: "Indian Street Food",
+        photo_url: "https://tse2.mm.bing.net/th/id/OIP.rlj_RPWRgJV9qUG-a9QtCwHaHC?pid=Api&P=0&h=180",
+        notes: "Prep time: 10 min • Serves 2",
+        ingredients: [
+          "2 cups puffed rice","1/2 cup sev","1 onion","1 tomato",
+          "Tamarind chutney","Green chutney"
+        ],
+        instructions: [
+          "Mix puffed rice, sev, onion, tomato.",
+          "Add chutneys and mix well.",
+          "Serve immediately."
+        ]
+      },
+      {
+        id: 67,
+        name: "Pani Puri",
+        cuisine: "Indian Street Food",
+        photo_url: "https://tse2.mm.bing.net/th/id/OIP.4S33u5tNGEV5wlD--vVEEgHaHz?pid=Api&P=0&h=180",
+        notes: "Prep time: 20 min • Serves 3",
+        ingredients: [
+          "20 puris","1/2 cup boiled potato","1/2 cup boiled chana",
+          "Spiced pani (tamarind, mint, masala)"
+        ],
+        instructions: [
+          "Fill puris with potato & chana.",
+          "Dip in spiced pani.",
+          "Serve immediately."
+        ]
+      },
+      {
+        id: 68,
+        name: "Shev Puri",
+        cuisine: "Indian Chaat",
+        photo_url: "https://tse3.mm.bing.net/th/id/OIP.WGs9_E4pbXcHSF5Lz6HotwHaHb?pid=Api&P=0&h=180",
+        notes: "Prep time: 15 min • Serves 2",
+        ingredients: [
+          "10 puris","1 potato","Onion","Tomato","Green chutney",
+          "Tamarind chutney","Sev"
+        ],
+        instructions: [
+          "Arrange puris on plate.",
+          "Fill with potato, onion, tomato.",
+          "Top with chutneys and sev.",
+          "Serve immediately."
+        ]
+      },
+      {
+        id: 69,
+        name: "Ragda Puri",
+        cuisine: "Indian Chaat",
+        photo_url: "https://i.ndtvimg.com/i/2017-11/ragda-patties_620x330_81510130168.jpg",
+        notes: "Prep time: 30 min • Serves 3",
+        ingredients: [
+          "15 puris","1 cup white peas (ragda)","Onion","Tomato",
+          "Chutneys","Sev"
+        ],
+        instructions: [
+          "Boil white peas to make ragda curry.",
+          "Fill puris with ragda.",
+          "Top with chutneys, onion, tomato, sev.",
+          "Serve hot."
+        ]
+      },
+      {
+        id:70,
+        name: "Chinese Bhel",
+        cuisine: "Fusion Street Food",
+        photo_url: "https://tse1.mm.bing.net/th/id/OIP.eq06wEBNj6KROLsxUDeePgHaFj?pid=Api&P=0&h=180",
+        notes: "Prep time: 20 min • Serves 2",
+        ingredients: [
+          "2 cups fried noodles","1 onion","1 carrot","1 capsicum",
+          "Soy sauce","Chili sauce","Tomato ketchup"
+        ],
+        instructions: [
+          "Mix fried noodles with chopped veggies.",
+          "Add sauces and toss well.",
+          "Serve crunchy Chinese bhel."
+        ]
+      }
+    ];
+    // 👉 Display recipe cards
+    const container = document.getElementById("recipe-list");
+    recipes.forEach(recipe => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <img src="${recipe.photo_url}" alt="${recipe.name}">
+        <h3>${recipe.name}</h3>
+        <p><strong>Cuisine:</strong> ${recipe.cuisine}</p>
+        <p>${recipe.notes}</p>
+        <a href="recipe.html?id=${recipe.id}">View Recipe</a>
+      `;
+      container.appendChild(card);
+    });
+
+    // 👉 Save recipes to localStorage (so recipe.html can read)
+    localStorage.setItem("recipes", JSON.stringify(recipes));
+  </script>
+</body>
+</html> 
